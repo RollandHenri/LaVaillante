@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: grey;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+.navbar .nav-logo {
+  margin: 10px;
+}
+.navbar .nav-logo img {
+  width: 50px;
+  height: 50px;
+}
+.navbar .nav-link {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.8s;
+}
+.navbar .nav-link ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+.navbar .nav-link ul li {
+  margin: 20px auto;
+}
+.navbar .navbar-menu input[type=checkbox] {
+  display: none;
+}
+.navbar .navbar-menu .button {
+  position: relative;
+  background-color: white;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 8px;
+  right: 15px;
+  z-index: 2000;
+  box-shadow: 0 1rem 2rem black;
+  text-align: center;
+  cursor: pointer;
+}
+.navbar .navbar-menu .button .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 3px;
+  background-color: black;
+}
+.navbar .navbar-menu .button .icon:before,
+.navbar .navbar-menu .button .icon:after {
+  width: 2rem;
+  height: 3px;
+  background-color: black;
+  display: inline-block;
+}
+.navbar .navbar-menu .button .icon::before,
+.navbar .navbar-menu .button .icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+.navbar .navbar-menu .button .icon:before {
+  top: -0.6rem;
+}
+.navbar .navbar-menu .button .icon:after {
+  top: 0.6rem;
+}
+.navbar .navbar-menu .button .button:hover .icon::before {
+  top: -1rem;
+}
+.navbar .navbar-menu .button .button:hover .icon::before {
+  top: 1rem;
+}
+.navbar .navbar-menu .background {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 8px;
+  right: 15px;
+  background-image: radial-gradient(green, black);
+  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.navbar .checkbox:checked + .button .icon {
+  background-color: transparent;
+}
+.navbar .checkbox:checked + .button .icon:before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.navbar .checkbox:checked + .button .icon:after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+.navbar .checkbox:checked ~ .background {
+  transform: scale(80);
+}/*# sourceMappingURL=style.css.map */
