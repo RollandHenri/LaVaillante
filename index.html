@@ -14,11 +14,11 @@
         </div>
         <div class="nav-link">
           <ul>
-            <li><a href="">Accueil</a></li>
-            <li><a href="">Actu & Résultats</a></li>
-            <li><a href="">Nos Equipes</a></li>
-            <li><a href="">La Boutique</a></li>
-            <li><a href="">Contacts</a></li>
+            <li><a href="#" class="linkHamb">Accueil</a></li>
+            <li><a href="#test" class="linkHamb">Actu & Résultats</a></li>
+            <li><a href="" class="linkHamb">Nos Equipes</a></li>
+            <li><a href="" class="linkHamb">La Boutique</a></li>
+            <li><a href="" class="linkHamb">Contacts</a></li>
           </ul>
         </div>
 
@@ -40,6 +40,122 @@
         <h2>Basket Club</h2>
       </div>
     </header>
+
+    <main>
+      <div class="main-container">
+        <div class="main-container-resultats">
+          <span id="test"></span>
+          <div
+            class="scorenco-widget"
+            data-widget-type="previous-next"
+            data-widget-id="107079"
+            style="
+              background: #f2f5f9;
+              height: 500px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              text-transform: uppercase;
+              font-family: sans-serif;
+              font-weight: bolder;
+              gap: 9px;
+              color: #1e457b;
+            "
+          >
+            <div class="ldsdr"></div>
+            Score'n'co - Vaillante Immaculee St Nazaire
+          </div>
+
+          <style>
+            .ldsdr {
+              display: inline-block;
+              width: 80px;
+              height: 80px;
+            }
+            .ldsdr:after {
+              content: " ";
+              display: block;
+              width: 64px;
+              height: 64px;
+              margin: 8px;
+              border-radius: 50%;
+              border: 6px solid #1e457b;
+              border-color: #1e457b transparent;
+              animation: ldsdr 1.2s linear infinite;
+            }
+            @keyframes ldsdr {
+              0% {
+                transform: rotate(0deg);
+              }
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+          </style>
+          <script
+            async
+            defer
+            src="https://widgets.scorenco.com/host/widgets.js"
+          ></script>
+        </div>
+        <div class="main-container-classement">
+          <div
+            class="scorenco-widget"
+            data-widget-type="ranking"
+            data-widget-id="107080"
+            style="
+              background: #f2f5f9;
+              height: 500px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              text-transform: uppercase;
+              font-family: sans-serif;
+              font-weight: bolder;
+              gap: 9px;
+              color: #1e457b;
+            "
+          >
+            <div class="ldsdr"></div>
+            Score'n'co - Vaillante Immaculee St Nazaire
+          </div>
+          <style>
+            .ldsdr {
+              display: inline-block;
+              width: 80px;
+              height: 80px;
+            }
+            .ldsdr:after {
+              content: " ";
+              display: block;
+              width: 64px;
+              height: 64px;
+              margin: 8px;
+              border-radius: 50%;
+              border: 6px solid #1e457b;
+              border-color: #1e457b transparent;
+              animation: ldsdr 1.2s linear infinite;
+            }
+            @keyframes ldsdr {
+              0% {
+                transform: rotate(0deg);
+              }
+              100% {
+                transform: rotate(360deg);
+              }
+            }
+          </style>
+          <script
+            async
+            defer
+            src="https://widgets.scorenco.com/host/widgets.js"
+          ></script>
+        </div>
+      </div>
+    </main>
+
     <script type="module" defer src="/index.js"></script>
   </body>
 </html>

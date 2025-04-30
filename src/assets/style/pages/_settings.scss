@@ -8,6 +8,8 @@
   font-family: sans-serif;
 }
 
-body {
+body,
+html {
+  scroll-behavior: smooth;
   background-color: grey;
 }
