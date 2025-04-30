@@ -1,5 +1,5 @@
 .navbar {
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,9 +30,16 @@
       list-style: none;
       text-align: center;
       width: 100%;
-      transition: all 1s;
+      transition: all 0.8s ease;
       & li {
         margin: 20px auto;
+        color: white;
+        text-transform: uppercase;
+        margin: 60px auto;
+        & a {
+          text-decoration: none;
+          color: white;
+        }
       }
     }
   }
@@ -43,12 +50,12 @@
     & .button {
       position: relative;
       background-color: white;
-      height: 3.5rem;
-      width: 3.5rem;
+      height: 3rem;
+      width: 3rem;
       border-radius: 50%;
       position: fixed;
-      top: 8px;
-      right: 15px;
+      top: 12px;
+      right: 18px;
       z-index: 2000;
       box-shadow: 0 1rem 2rem black;
       text-align: center;
@@ -90,14 +97,14 @@
       }
     }
     & .background {
-      height: 3.5rem;
-      width: 3.5rem;
+      height: 3rem;
+      width: 3rem;
       border-radius: 50%;
       position: fixed;
-      top: 8px;
-      right: 15px;
-      background-image: radial-gradient(rgb(0, 51, 128), black);
-      transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+      top: 12px;
+      right: 18px;
+      background-image: radial-gradient(rgba(0, 51, 128, 0.918), black);
+      transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1);
     }
   }
   & .checkbox:checked + .button .icon {

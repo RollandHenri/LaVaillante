@@ -1,0 +1,18 @@
+header {
+  width: 100%;
+  height: 100vh;
+  background: url("/public/img/pexels-markusspiske-1752757_resultat.webp")
+    center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-title {
+  color: white;
+  text-align: center;
+  & h1 {
+    margin: 20px auto;
+  }
+}
