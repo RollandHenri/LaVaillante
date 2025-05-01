@@ -4,8 +4,6 @@ const linkHambMenu = document.querySelectorAll(".linkHamb");
 const bkgdHambMenu = document.querySelector(".background");
 const checkHambMenu = document.querySelector(".checkbox");
 
-console.log(checkHambMenu);
-
 hambMenu.addEventListener("click", () => {
   if (hambMenuLink.style.opacity !== "1") {
     hambMenuLink.style.opacity = "1";

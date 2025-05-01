@@ -1,0 +1,11 @@
+.main-result {
+  margin: 30px auto;
+  & h2 {
+    text-align: center;
+    margin: 20px auto;
+    text-decoration: underline;
+  }
+  & .main-container-resultats {
+    margin: 50px auto;
+  }
+}

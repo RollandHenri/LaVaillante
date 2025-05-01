@@ -15,7 +15,8 @@
         <div class="nav-link">
           <ul>
             <li><a href="#" class="linkHamb">Accueil</a></li>
-            <li><a href="#test" class="linkHamb">Actu & Résultats</a></li>
+            <li><a href="#ancre-actu" class="linkHamb">Actu du Club</a></li>
+            <li><a href="#ancre-resultats" class="linkHamb">Résultats</a></li>
             <li><a href="" class="linkHamb">Nos Equipes</a></li>
             <li><a href="" class="linkHamb">La Boutique</a></li>
             <li><a href="" class="linkHamb">Contacts</a></li>
@@ -40,11 +41,95 @@
         <h2>Basket Club</h2>
       </div>
     </header>
+    <span id="ancre-actu"></span>
 
-    <main>
+    <!-- Carousel d'actu-->
+
+    <main class="main-actu-slider">
+      <h2>Actualités du Club</h2>
+      <div class="main-actu-container">
+        <ul>
+          <li class="slide active">
+            <div class="slide-contain">
+              <div class="slide-text">
+                <h3>Coucou 1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+                  quis?
+                </p>
+              </div>
+              <div class="slide-img">
+                <img
+                  src="./public/img/actuCarousel/Stage.webp"
+                  alt="stage basket"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="slide">
+            <div class="slide-contain">
+              <div class="slide-text">
+                <h3>Coucou 2</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+                  quis?
+                </p>
+              </div>
+              <div class="slide-img">
+                <img
+                  src="./public/img/actuCarousel/Noël.webp"
+                  alt="affiche de Noël basket"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="slide">
+            <div class="slide-contain">
+              <div class="slide-text">
+                <h3>Coucou 3</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+                  quis?
+                </p>
+              </div>
+              <div class="slide-img">
+                <img
+                  src="./public/img/actuCarousel/halloween.webp"
+                  alt="affiche Hallowen basket"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="slide">
+            <div class="slide-contain">
+              <div class="slide-text">
+                <h3>Coucou 4</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+                  quis?
+                </p>
+              </div>
+              <div class="slide-img">
+                <img
+                  src="./public/img/actuCarousel/Rose.webp"
+                  alt="affiche octobre Rose basket"
+                />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="main-actu-btn">
+        <div class="btn-nav btn-left" id="next">&#8592;</div>
+        <div class="btn-nav btn-right" id="prev">&#8594;</div>
+      </div>
+    </main>
+
+    <main class="main-result">
       <div class="main-container">
+        <h2>Les Résultats et Classements</h2>
         <div class="main-container-resultats">
-          <span id="test"></span>
+          <span id="ancre-resultats"></span>
           <div
             class="scorenco-widget"
             data-widget-type="previous-next"
