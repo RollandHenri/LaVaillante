@@ -21,7 +21,7 @@
 body,
 html {
   scroll-behavior: smooth;
-  background-color: grey;
+  background-color: transparent;
 }
 
 nav {
@@ -106,10 +106,13 @@ header {
 .main-actu-slider {
   width: 100%;
   height: auto;
+  padding: 40px 0;
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(87, 93, 199) 70%, rgb(255, 255, 255) 100%);
 }
 .main-actu-slider h2 {
   text-align: center;
-  margin: 20px auto;
+  color: white;
+  padding: 40px 0;
   text-decoration: underline;
 }
 .main-actu-slider .main-actu-container {
@@ -164,8 +167,17 @@ header {
 }
 .main-actu-slider .main-actu-btn .btn-nav {
   font-size: 2rem;
-  margin: auto 20px;
-  background-color: red;
+  margin: auto 40px;
+}
+.main-actu-slider .main-actu-btn .btn-left {
+  background: url("/public/icon/fleche-gauche.png") center/cover;
+  width: 50px;
+  height: 50px;
+}
+.main-actu-slider .main-actu-btn .btn-right {
+  background: url("/public/icon/fleche-droite.png") center/cover;
+  width: 50px;
+  height: 50px;
 }
 
 .main-result {
