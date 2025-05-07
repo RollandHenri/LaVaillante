@@ -1,125 +1,60 @@
-.navbar {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 80px;
-  z-index: 2;
-  & .nav-logo {
-    margin: 10px;
-    z-index: 10;
-    & img {
-      width: 50px;
-      height: 50px;
-    }
-  }
-  & .nav-link {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    right: -100%;
-    opacity: 0;
-    z-index: 10;
+nav {
+  position: relative;
+  & .nav-hamb-logo {
+    position: fixed;
+    right: 15px;
+    top: 30px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    background: url(/public/icon/burger-bar-white.png) center / cover;
     transition: all 0.8s ease;
-    & ul {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      list-style: none;
-      text-align: center;
+  }
+  & .nav-hamb-logo-close {
+    position: fixed;
+    right: 15px;
+    top: 30px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    transform: rotateY(90deg);
+    background: url(/public/icon/croix-white.png) center / cover;
+    transition: all 0.8s ease;
+  }
+  & .navbar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 81, 128);
+    right: -80%;
+    opacity: 0;
+    transition: all 0.8s ease;
+    & .nav-logo {
+      margin: 20px;
+      & img {
+        width: 60px;
+        height: auto;
+      }
+    }
+    & .nav-link {
       width: 100%;
-      transition: all 0.8s ease;
-      & li {
-        margin: 20px auto;
-        color: white;
-        text-transform: uppercase;
-        margin: 60px auto;
-        & a {
-          text-decoration: none;
-          color: white;
+      height: 100%;
+      & ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 80px auto;
+        & li {
+          margin: 30px auto;
+          & a {
+            color: white;
+            font-size: 1.6rem;
+            font-family: sans-serif;
+            text-decoration: none;
+          }
         }
       }
     }
-  }
-  & .navbar-menu {
-    & input[type="checkbox"] {
-      display: none;
-    }
-    & .button {
-      position: relative;
-      background-color: white;
-      height: 3rem;
-      width: 3rem;
-      border-radius: 50%;
-      position: fixed;
-      top: 12px;
-      right: 18px;
-      z-index: 2000;
-      box-shadow: 0 1rem 2rem black;
-      text-align: center;
-      cursor: pointer;
-      & .icon {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 2rem;
-        height: 3px;
-        background-color: black;
-      }
-      & .icon:before,
-      .icon:after {
-        width: 2rem;
-        height: 3px;
-        background-color: black;
-        display: inline-block;
-      }
-      & .icon::before,
-      .icon::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        transition: all 0.2s;
-      }
-      & .icon:before {
-        top: -0.6rem;
-      }
-      & .icon:after {
-        top: 0.6rem;
-      }
-      & .button:hover .icon::before {
-        top: -1rem;
-      }
-      & .button:hover .icon::before {
-        top: 1rem;
-      }
-    }
-    & .background {
-      height: 3rem;
-      width: 3rem;
-      border-radius: 50%;
-      position: fixed;
-      top: 12px;
-      right: 18px;
-      background-image: radial-gradient(rgb(0, 51, 128), black);
-      transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1);
-    }
-  }
-  & .checkbox:checked + .button .icon {
-    background-color: transparent;
-  }
-  & .checkbox:checked + .button .icon:before {
-    top: 0;
-    transform: rotate(135deg);
-  }
-  & .checkbox:checked + .button .icon:after {
-    top: 0;
-    transform: rotate(-135deg);
-  }
-  & .checkbox:checked ~ .background {
-    transform: scale(80) !important;
   }
 }

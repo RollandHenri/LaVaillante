@@ -24,128 +24,65 @@ html {
   background-color: grey;
 }
 
-.navbar {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 80px;
-  z-index: 2;
-}
-.navbar .nav-logo {
-  margin: 10px;
-  z-index: 10;
-}
-.navbar .nav-logo img {
-  width: 50px;
-  height: 50px;
-}
-.navbar .nav-link {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  right: -100%;
-  opacity: 0;
-  z-index: 10;
-  transition: all 0.8s ease;
-}
-.navbar .nav-link ul {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  list-style: none;
-  text-align: center;
-  width: 100%;
-  transition: all 0.8s ease;
-}
-.navbar .nav-link ul li {
-  margin: 20px auto;
-  color: white;
-  text-transform: uppercase;
-  margin: 60px auto;
-}
-.navbar .nav-link ul li a {
-  text-decoration: none;
-  color: white;
-}
-.navbar .navbar-menu input[type=checkbox] {
-  display: none;
-}
-.navbar .navbar-menu .button {
+nav {
   position: relative;
-  background-color: white;
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
+}
+nav .nav-hamb-logo {
   position: fixed;
-  top: 12px;
-  right: 18px;
-  z-index: 2000;
-  box-shadow: 0 1rem 2rem black;
-  text-align: center;
-  cursor: pointer;
+  right: 15px;
+  top: 30px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  background: url(/public/icon/burger-bar-white.png) center/cover;
+  transition: all 0.8s ease;
 }
-.navbar .navbar-menu .button .icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 2rem;
-  height: 3px;
-  background-color: black;
-}
-.navbar .navbar-menu .button .icon:before,
-.navbar .navbar-menu .button .icon:after {
-  width: 2rem;
-  height: 3px;
-  background-color: black;
-  display: inline-block;
-}
-.navbar .navbar-menu .button .icon::before,
-.navbar .navbar-menu .button .icon::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  transition: all 0.2s;
-}
-.navbar .navbar-menu .button .icon:before {
-  top: -0.6rem;
-}
-.navbar .navbar-menu .button .icon:after {
-  top: 0.6rem;
-}
-.navbar .navbar-menu .button .button:hover .icon::before {
-  top: -1rem;
-}
-.navbar .navbar-menu .button .button:hover .icon::before {
-  top: 1rem;
-}
-.navbar .navbar-menu .background {
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
+nav .nav-hamb-logo-close {
   position: fixed;
-  top: 12px;
-  right: 18px;
-  background-image: radial-gradient(rgb(0, 51, 128), black);
-  transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+  right: 15px;
+  top: 30px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  transform: rotateY(90deg);
+  background: url(/public/icon/croix-white.png) center/cover;
+  transition: all 0.8s ease;
 }
-.navbar .checkbox:checked + .button .icon {
-  background-color: transparent;
+nav .navbar {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 81, 128);
+  right: -80%;
+  opacity: 0;
+  transition: all 0.8s ease;
 }
-.navbar .checkbox:checked + .button .icon:before {
-  top: 0;
-  transform: rotate(135deg);
+nav .navbar .nav-logo {
+  margin: 20px;
 }
-.navbar .checkbox:checked + .button .icon:after {
-  top: 0;
-  transform: rotate(-135deg);
+nav .navbar .nav-logo img {
+  width: 60px;
+  height: auto;
 }
-.navbar .checkbox:checked ~ .background {
-  transform: scale(80) !important;
+nav .navbar .nav-link {
+  width: 100%;
+  height: 100%;
+}
+nav .navbar .nav-link ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+}
+nav .navbar .nav-link ul li {
+  margin: 30px auto;
+}
+nav .navbar .nav-link ul li a {
+  color: white;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  text-decoration: none;
 }
 
 header {

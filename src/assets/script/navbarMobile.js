@@ -1,24 +1,34 @@
-const hambMenu = document.querySelector(".button");
-const hambMenuLink = document.querySelector(".nav-link");
-const linkHambMenu = document.querySelectorAll(".linkHamb");
-const bkgdHambMenu = document.querySelector(".background");
-const checkHambMenu = document.querySelector(".checkbox");
+const hambmenu = document.querySelector(".nav-hamb-logo");
+const hambmenuClose = document.querySelector(".nav-hamb-logo-close");
+const menu = document.querySelector(".navbar");
+const link = document.querySelectorAll(".linkHamb");
+console.log(link);
 
-hambMenu.addEventListener("click", () => {
-  if (hambMenuLink.style.opacity !== "1") {
-    hambMenuLink.style.opacity = "1";
-    hambMenuLink.style.right = "0";
-  } else {
-    hambMenuLink.style.opacity = "0";
-    hambMenuLink.style.right = "-100%";
-  }
+hambmenu.addEventListener("click", () => {
+  hambmenu.style.transform = "rotateY(90deg)";
+  hambmenu.style.opacity = "0";
+  hambmenuClose.style.transform = " rotateY(0deg)";
+  hambmenuClose.style.opacity = "1";
+  menu.style.right = "0";
+  menu.style.opacity = "1";
 });
 
-linkHambMenu.forEach((link) => {
-  link.addEventListener("click", () => {
-    hambMenuLink.style.opacity = "0";
-    hambMenuLink.style.right = "-100%";
-    bkgdHambMenu.style.transform = "scale(0)";
-    checkHambMenu.checked = false;
+hambmenuClose.addEventListener("click", () => {
+  hambmenu.style.transform = "rotateY(0deg)";
+  hambmenu.style.opacity = "1";
+  hambmenuClose.style.transform = " rotateY(90deg)";
+  hambmenuClose.style.opacity = "0";
+  menu.style.right = "-80%";
+  menu.style.opacity = "0";
+});
+
+link.forEach((item) => {
+  item.addEventListener("click", () => {
+    hambmenu.style.transform = "rotateY(0deg)";
+    hambmenu.style.opacity = "1";
+    hambmenuClose.style.transform = " rotateY(90deg)";
+    hambmenuClose.style.opacity = "0";
+    menu.style.right = "-80%";
+    menu.style.opacity = "0";
   });
 });
