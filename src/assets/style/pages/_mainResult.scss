@@ -7,5 +7,19 @@
   }
   & .main-container-resultats {
     margin: 50px auto;
+    & .resultat-btn-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px auto;
+      & button {
+        width: 150px;
+        height: 40px;
+        &:active {
+          transform: scale(0.9);
+          transition: 0.1s all ease;
+        }
+      }
+    }
   }
 }

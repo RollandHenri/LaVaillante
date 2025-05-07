@@ -174,10 +174,18 @@ header {
   width: 50px;
   height: 50px;
 }
+.main-actu-slider .main-actu-btn .btn-left:active {
+  transform: scale(0.9);
+  transition: 0.1s all ease;
+}
 .main-actu-slider .main-actu-btn .btn-right {
   background: url("/public/icon/fleche-droite.png") center/cover;
   width: 50px;
   height: 50px;
+}
+.main-actu-slider .main-actu-btn .btn-right:active {
+  transform: scale(0.9);
+  transition: 0.1s all ease;
 }
 
 .main-result {
@@ -190,4 +198,18 @@ header {
 }
 .main-result .main-container-resultats {
   margin: 50px auto;
+}
+.main-result .main-container-resultats .resultat-btn-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+}
+.main-result .main-container-resultats .resultat-btn-container button {
+  width: 150px;
+  height: 40px;
+}
+.main-result .main-container-resultats .resultat-btn-container button:active {
+  transform: scale(0.9);
+  transition: 0.1s all ease;
 }/*# sourceMappingURL=style.css.map */

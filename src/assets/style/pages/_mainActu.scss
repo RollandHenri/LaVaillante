@@ -72,11 +72,19 @@
       background: url("/public/icon/fleche-gauche.png") center / cover;
       width: 50px;
       height: 50px;
+      &:active {
+        transform: scale(0.9);
+        transition: 0.1s all ease;
+      }
     }
     & .btn-right {
       background: url("/public/icon/fleche-droite.png") center / cover;
       width: 50px;
       height: 50px;
+      &:active {
+        transform: scale(0.9);
+        transition: 0.1s all ease;
+      }
     }
   }
 }
