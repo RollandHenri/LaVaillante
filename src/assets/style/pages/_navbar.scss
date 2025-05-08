@@ -3,23 +3,23 @@ nav {
   z-index: 3;
   & .nav-hamb-logo {
     position: fixed;
-    right: 15px;
-    top: 30px;
+    right: 10px;
+    top: 20px;
     z-index: 2;
     width: 40px;
     height: 40px;
-    background: url(/public/icon/burger-bar-white.png) center / cover;
+    background: url(/public/icon/burger-bar-white.webp) center / cover;
     transition: all 0.8s ease;
   }
   & .nav-hamb-logo-close {
     position: fixed;
-    right: 15px;
-    top: 30px;
+    right: 10px;
+    top: 20px;
     z-index: 2;
     width: 40px;
     height: 40px;
     transform: rotateY(90deg);
-    background: url(/public/icon/croix-white.png) center / cover;
+    background: url(/public/icon/croix-white.webp) center / cover;
     transition: all 0.8s ease;
   }
   & .navbar {
