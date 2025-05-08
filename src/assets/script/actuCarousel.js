@@ -1,6 +1,5 @@
 const btn = document.querySelectorAll(".btn-nav");
 const slides = document.querySelectorAll(".slide");
-console.log(slides);
 
 btn.forEach((button) => {
   button.addEventListener("click", (e) => {

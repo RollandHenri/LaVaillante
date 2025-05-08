@@ -120,120 +120,125 @@
     <main class="main-result">
       <div class="main-container">
         <h2>Les Résultats et Classements</h2>
-
-        <div class="main-container-resultats">
-          <div class="resultat-btn-container">
-            <button>Matchs</button>
-            <button>Résultats</button>
-          </div>
-          <span id="ancre-resultats"></span>
-          <div
-            class="scorenco-widget"
-            data-widget-type="previous-next"
-            data-widget-id="107079"
-            style="
-              background: #f2f5f9;
-              height: 500px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              flex-direction: column;
-              text-transform: uppercase;
-              font-family: sans-serif;
-              font-weight: bolder;
-              gap: 9px;
-              color: #1e457b;
-            "
-          >
-            <div class="ldsdr"></div>
-            Score'n'co - Vaillante Immaculee St Nazaire
-          </div>
-
-          <style>
-            .ldsdr {
-              display: inline-block;
-              width: 80px;
-              height: 80px;
-            }
-            .ldsdr:after {
-              content: " ";
-              display: block;
-              width: 64px;
-              height: 64px;
-              margin: 8px;
-              border-radius: 50%;
-              border: 6px solid #1e457b;
-              border-color: #1e457b transparent;
-              animation: ldsdr 1.2s linear infinite;
-            }
-            @keyframes ldsdr {
-              0% {
-                transform: rotate(0deg);
-              }
-              100% {
-                transform: rotate(360deg);
-              }
-            }
-          </style>
-          <script
-            async
-            defer
-            src="https://widgets.scorenco.com/host/widgets.js"
-          ></script>
+        <div class="resultat-btn-container">
+          <button class="matchs btn-main-result active" id="matchs">
+            Matchs
+          </button>
+          <button class="resultats btn-main-result" id="classements">
+            Classements
+          </button>
         </div>
-        <div class="main-container-classement">
-          <div
-            class="scorenco-widget"
-            data-widget-type="ranking"
-            data-widget-id="107080"
-            style="
-              background: #f2f5f9;
-              height: 500px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              flex-direction: column;
-              text-transform: uppercase;
-              font-family: sans-serif;
-              font-weight: bolder;
-              gap: 9px;
-              color: #1e457b;
-            "
-          >
-            <div class="ldsdr"></div>
-            Score'n'co - Vaillante Immaculee St Nazaire
+        <div class="main-resultat-carousel">
+          <div class="main-container-resultats">
+            <span id="ancre-resultats"></span>
+            <div
+              class="scorenco-widget"
+              data-widget-type="previous-next"
+              data-widget-id="107079"
+              style="
+                background: #f2f5f9;
+                height: 500px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-transform: uppercase;
+                font-family: sans-serif;
+                font-weight: bolder;
+                gap: 9px;
+                color: #1e457b;
+              "
+            >
+              <div class="ldsdr"></div>
+              Score'n'co - Vaillante Immaculee St Nazaire
+            </div>
+
+            <style>
+              .ldsdr {
+                display: inline-block;
+                width: 80px;
+                height: 80px;
+              }
+              .ldsdr:after {
+                content: " ";
+                display: block;
+                width: 64px;
+                height: 64px;
+                margin: 8px;
+                border-radius: 50%;
+                border: 6px solid #1e457b;
+                border-color: #1e457b transparent;
+                animation: ldsdr 1.2s linear infinite;
+              }
+              @keyframes ldsdr {
+                0% {
+                  transform: rotate(0deg);
+                }
+                100% {
+                  transform: rotate(360deg);
+                }
+              }
+            </style>
+            <script
+              async
+              defer
+              src="https://widgets.scorenco.com/host/widgets.js"
+            ></script>
           </div>
-          <style>
-            .ldsdr {
-              display: inline-block;
-              width: 80px;
-              height: 80px;
-            }
-            .ldsdr:after {
-              content: " ";
-              display: block;
-              width: 64px;
-              height: 64px;
-              margin: 8px;
-              border-radius: 50%;
-              border: 6px solid #1e457b;
-              border-color: #1e457b transparent;
-              animation: ldsdr 1.2s linear infinite;
-            }
-            @keyframes ldsdr {
-              0% {
-                transform: rotate(0deg);
+          <div class="main-container-classement">
+            <div
+              class="scorenco-widget"
+              data-widget-type="ranking"
+              data-widget-id="107080"
+              style="
+                background: #f2f5f9;
+                height: 500px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-transform: uppercase;
+                font-family: sans-serif;
+                font-weight: bolder;
+                gap: 9px;
+                color: #1e457b;
+              "
+            >
+              <div class="ldsdr"></div>
+              Score'n'co - Vaillante Immaculee St Nazaire
+            </div>
+            <style>
+              .ldsdr {
+                display: inline-block;
+                width: 80px;
+                height: 80px;
               }
-              100% {
-                transform: rotate(360deg);
+              .ldsdr:after {
+                content: " ";
+                display: block;
+                width: 64px;
+                height: 64px;
+                margin: 8px;
+                border-radius: 50%;
+                border: 6px solid #1e457b;
+                border-color: #1e457b transparent;
+                animation: ldsdr 1.2s linear infinite;
               }
-            }
-          </style>
-          <script
-            async
-            defer
-            src="https://widgets.scorenco.com/host/widgets.js"
-          ></script>
+              @keyframes ldsdr {
+                0% {
+                  transform: rotate(0deg);
+                }
+                100% {
+                  transform: rotate(360deg);
+                }
+              }
+            </style>
+            <script
+              async
+              defer
+              src="https://widgets.scorenco.com/host/widgets.js"
+            ></script>
+          </div>
         </div>
       </div>
     </main>

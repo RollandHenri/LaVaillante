@@ -2,24 +2,51 @@
   margin: 30px auto;
   & h2 {
     text-align: center;
-    margin: 20px auto;
+    margin: 50px auto;
     text-decoration: underline;
   }
-  & .main-container-resultats {
-    margin: 50px auto;
-    & .resultat-btn-container {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin: 20px auto;
-      & button {
-        width: 150px;
-        height: 40px;
-        &:active {
-          transform: scale(0.9);
-          transition: 0.1s all ease;
-        }
+  & .resultat-btn-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px auto;
+    & button {
+      width: 150px;
+      height: 40px;
+      border: 1px solid black;
+      border-radius: 10px;
+      &:active {
+        transform: scale(0.9);
+        transition: 0.1s all ease;
       }
+    }
+    & .active {
+      border: 1px solid blue;
+      box-shadow: 2px 5px 5px blue;
+      transition: all 0.5s ease;
+    }
+  }
+  & .main-resultat-carousel {
+    position: relative;
+    padding: 10px;
+
+    & .main-container-resultat {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+      transition: all 0.4 ease;
+    }
+    & .main-container-classement {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      width: 100%;
+      padding: 10px;
+      opacity: 0;
+      transition: all 0.4 ease;
     }
   }
 }

@@ -2,7 +2,6 @@ const hambmenu = document.querySelector(".nav-hamb-logo");
 const hambmenuClose = document.querySelector(".nav-hamb-logo-close");
 const menu = document.querySelector(".navbar");
 const link = document.querySelectorAll(".linkHamb");
-console.log(link);
 
 hambmenu.addEventListener("click", () => {
   hambmenu.style.transform = "rotateY(90deg)";
@@ -20,6 +19,7 @@ hambmenuClose.addEventListener("click", () => {
   hambmenuClose.style.opacity = "0";
   menu.style.right = "-80%";
   menu.style.opacity = "0";
+  menu.style.zIndex = "-1";
 });
 
 link.forEach((item) => {
