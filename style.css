@@ -16,6 +16,7 @@
   box-sizing: border-box;
   list-style: none;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 body,
@@ -272,7 +273,8 @@ header:after {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 40px auto;
+  padding: 20px 0;
+  margin: 20px auto;
 }
 .main-result .resultat-btn-container button {
   width: 150px;
@@ -286,7 +288,7 @@ header:after {
 }
 .main-result .resultat-btn-container .active {
   border: 1px solid blue;
-  box-shadow: 2px 5px 5px blue;
+  box-shadow: 3px 3px 8px blue;
   transition: all 0.5s ease;
 }
 .main-result .main-resultat-carousel {
