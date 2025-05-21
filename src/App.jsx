@@ -15,6 +15,7 @@ import Break from "./components/Break";
 function App() {
   return (
     <>
+      <div className="bkgd-body"></div>
       <Header />
       <MainActu />
       <Break />

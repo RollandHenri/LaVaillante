@@ -16,10 +16,29 @@ body {
   height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  background: url("../../public/img/bkgd_header_II.webp");
-  background-attachment: fixed;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: 0.5s ease;
+}
+.bkgd-body {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.bkgd-body::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: url("../../public/img/bkgd_header.webp") center / cover;
+}
+
+.bkgd-body:after {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(204, 204, 204, 0.51);
 }

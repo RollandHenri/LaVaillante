@@ -31,8 +31,8 @@
   opacity: 0;
   background: radial-gradient(
     circle,
-    rgba(7, 132, 173, 0.82) 57%,
-    rgba(0, 0, 0, 0.82) 89%
+    rgba(7, 132, 173, 0.85) 45%,
+    rgba(0, 0, 0, 0.88) 95%
   );
   border-top-left-radius: 70%;
   border-top-right-radius: 70%;
