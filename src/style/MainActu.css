@@ -1,0 +1,20 @@
+h2 {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.bkgd-blur {
+  /* background: url("../../public/img/bkgd_header/bkgd2.webp") center / cover; */
+  z-index: 1;
+  overflow-y: hidden;
+}
+
+.bkgd-gradiant {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.28) 10%,
+    rgba(7, 132, 173, 0.85) 48%,
+    rgba(0, 0, 0, 0.88) 92%
+  );
+  overflow-y: hidden;
+}
