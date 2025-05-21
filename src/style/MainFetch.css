@@ -110,23 +110,29 @@ button.active {
   .main-actu-fetch {
     height: 100%;
     max-height: 1200px !important;
+    padding: 5px 0 !important;
     /* overflow-y: hidden !important; */
+  }
+
+  .main-actu-match {
+    padding: 5px;
   }
 
   .main-actu-resultat {
     height: max-content;
+    padding: 5px;
   }
 
   .fetch-match {
     height: 700px !important;
-    padding: 10px;
+    padding: 5px !important;
   }
 
   .fetch-classement {
     height: 600px !important;
     overflow-x: hidden !important;
     /* overflow-y: hidden !important; */
-    padding: 10px;
+    padding: 5px;
   }
 }
 
