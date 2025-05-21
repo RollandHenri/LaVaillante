@@ -120,7 +120,7 @@ svg text {
       rgba(7, 132, 173, 0.82) 57%,
       rgba(0, 0, 0, 0.82) 89%
     );
-    animation: fader 2s ease forwards 3s;
+    animation: fader 2s ease forwards 3.5s;
   }
 
   .header-hero::after {
@@ -158,7 +158,7 @@ svg text {
 
   .main-hero-mobile svg text {
     font-size: 250px !important;
-    animation: stroke 2.5s forwards 1s;
+    animation: stroke 2s forwards 1s;
   }
 
   .navbar-hamb-menu {

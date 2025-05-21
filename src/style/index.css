@@ -12,6 +12,14 @@
 
 body {
   background-color: grey;
+  width: 100%;
+  height: 100%;
   overflow-x: hidden;
-  background: url("../../public/img/bkgd_header.webp") center / cover fixed;
+  overflow-y: hidden;
+  background: url("../../public/img/bkgd_header_II.webp");
+  background-attachment: fixed;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s ease;
 }
