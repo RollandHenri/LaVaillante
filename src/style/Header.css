@@ -69,6 +69,10 @@ svg text {
   opacity: 0;
 }
 
+.main-hero-mobile {
+  display: none;
+}
+
 .navbar-hamb-menu {
   position: fixed;
   display: none;
@@ -102,36 +106,59 @@ svg text {
 /** MediaQuery Mobile **/
 
 @media screen and (max-width: 820px) {
-  .header-hero::after {
+  .header-hero::before {
     content: "";
     position: absolute;
-    bottom: -200px;
+    top: 0;
     left: 0;
-    height: 160px;
+    height: 100vh;
     width: 100%;
-    opacity: 0;
+    opacity: 1;
+    z-index: 3;
     background: radial-gradient(
       circle,
       rgba(7, 132, 173, 0.82) 57%,
       rgba(0, 0, 0, 0.82) 89%
     );
-    border-top-left-radius: 70%;
-    border-top-right-radius: 70%;
-    animation: translateMobile 2s ease forwards 1s;
+    animation: fader 2s ease forwards 3s;
+  }
+
+  .header-hero::after {
+    display: none;
   }
 
   .header-hero h1 {
     position: absolute;
-    bottom: -50px;
+    height: 400px;
+    width: 100%;
+    top: 15%;
+    transform: translateY(-50%);
+    margin: 0 auto;
     color: blue;
     font-family: sans-serif;
     font-size: 1.8rem;
     text-transform: capitalize;
     letter-spacing: 2px;
-    margin-top: 300px;
     opacity: 0;
-    z-index: 2;
-    animation: titleMobile 2s ease forwards 1s;
+    z-index: 4;
+    animation: titleMobile 1s ease forwards;
+    overflow-y: hidden !important;
+  }
+
+  .desktop {
+    display: none;
+  }
+  .main-hero-mobile {
+    display: block;
+    margin: 0 auto;
+  }
+  .main-hero-mobile svg {
+    height: 400px;
+  }
+
+  .main-hero-mobile svg text {
+    font-size: 250px !important;
+    animation: stroke 2.5s forwards 1s;
   }
 
   .navbar-hamb-menu {
@@ -141,6 +168,7 @@ svg text {
     align-items: center;
     margin: 0 auto;
     transition: 0.3s ease;
+    animation-delay: 3s;
     z-index: 999;
   }
 }
@@ -162,11 +190,11 @@ svg text {
 @keyframes fader {
   from {
     opacity: 1;
-    z-index: 10;
+    z-index: 3;
   }
   to {
     opacity: 0;
-    z-index: -5;
+    z-index: -1;
   }
 }
 

@@ -79,11 +79,21 @@ function Header() {
         </div>
         <Navigation />
         <h1>
-          <svg viewBox="0 0 2800 300">
+          <svg className="desktop" viewBox="0 0 2800 300">
             <text x="50%" y="80%" dy=".35em" textAnchor="middle">
               La Vaillante Basket Club
             </text>
           </svg>
+          <div className="main-hero-mobile">
+            <svg viewBox="0 0 2800 300">
+              <text x="50%" y="50%" dy=".35em" textAnchor="middle">
+                La Vaillante
+              </text>
+              <text x="50%" y="190%" dy=".35em" textAnchor="middle">
+                Basket Club
+              </text>
+            </svg>
+          </div>
         </h1>
       </div>
     </>
