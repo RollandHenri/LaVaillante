@@ -22,6 +22,7 @@ function App() {
       <MainFetch />
       <Break />
       <MainEquipes />
+      <Break />
       <MainBoutique />
       <MainContact />
       <Footer />

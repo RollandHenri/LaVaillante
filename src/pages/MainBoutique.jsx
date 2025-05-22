@@ -47,6 +47,15 @@ export default function MainBoutique() {
                 personnaliser vos vêtements avec votre numéro fétiche, vos
                 initiales ou votre prénom.
               </p>
+
+              <a
+                target="_blank"
+                href="https://www.helloasso.com/associations/vaillante-immaculee-basket/boutiques/la-boutique-de-la-vaillante-immaculee-basket-2023-2024?utm_source=app_ha&utm_campaign=share_campaign_button&utm_medium=ios"
+              >
+                <button>
+                  <span>Commander</span>
+                </button>
+              </a>
             </div>
           </div>
 

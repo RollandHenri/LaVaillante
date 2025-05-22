@@ -142,24 +142,19 @@
 }
 
 .number-slide1 {
-  /* background: rgb(64, 175, 255);
-  background: linear-gradient(
-    128deg,
-    rgba(64, 175, 255, 1) 0%,
-    rgba(63, 97, 255, 1) 100%
-  ); */
+  /* background: transparent; */
 }
 
-.number-slide2 {
+/* .number-slide2 {
   background: rgb(255, 75, 64);
   background: linear-gradient(
     128deg,
     rgba(255, 154, 63, 1) 0%,
     rgba(255, 75, 64, 1) 100%
   );
-}
+} */
 
-.number-slide3 {
+/* .number-slide3 {
   background: rgb(182, 255, 64);
   background: linear-gradient(
     128deg,
@@ -198,32 +193,251 @@
     rgba(64, 76, 255, 1) 0%,
     rgba(174, 63, 255, 1) 100%
   );
-}
+} */
 
 .thumbnail .keen-slider__slide {
   font-size: 30px;
   margin-top: 10px;
   height: 100px;
+  width: 150px !important;
 }
 .thumbnail .keen-slider__slide {
   cursor: pointer;
 }
 .thumbnail .keen-slider__slide.active {
-  border: 2px dashed black;
+  border: 2px solid white;
+  border-radius: 5px;
 }
 
 .slide {
   min-height: auto;
   height: 500px;
+  padding: 10px;
+  background: transparent;
 }
 
+.thumbnail-contain p {
+  padding: 0;
+}
 /** BKGD Carousel **/
 
 .slide-bureau {
-  width: 100%;
+  width: 70%;
   height: 100%;
   background-image: url("../../public/img/Equipes/Bureau.webp");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.slide-U9F1 {
+  width: 70%;
+  height: 100%;
+  background-color: grey;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.slide-U9M2 {
+  width: 70%;
+  height: 100%;
+  background-color: grey;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.slide-U9M1 {
+  width: 70%;
+  height: 100%;
+  background-image: url("../../public/img/Equipes/U9M1.webp");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.slide-U11F2 {
+  width: 70%;
+  height: 100%;
+  background-color: grey;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.slide-U11F1 {
+  width: 70%;
+  height: 100%;
+  background-image: url("../../public/img/Equipes/U11F1.webp");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slide-U11M2 {
+  width: 70%;
+  height: 100%;
+  background-image: url("../../public/img/Equipes/U11M2.webp");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slide-U11M1 {
+  width: 70%;
+  height: 100%;
+  background-color: grey;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slide-U13F1 {
+  width: 70%;
+  height: 100%;
+  background-color: grey;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slide-U13M1 {
+  width: 70%;
+  height: 100%;
+  background-image: url("../../public/img/Equipes/U13M1.webp");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slide-U15M2 {
+  width: 70%;
+  height: 100%;
+  background-image: url("../../public/img/Equipes/U15M2.webp");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slide-U15M1 {
+  width: 70%;
+  height: 100%;
+  background-color: grey;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slide-U18M2 {
+  width: 70%;
+  height: 100%;
+  background-color: grey;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slide-U18M1 {
+  width: 70%;
+  height: 100%;
+  background-image: url("../../public/img/Equipes/U18M1.webp");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slide-seniorF1 {
+  width: 70%;
+  height: 100%;
+  background-color: grey;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slide-seniorM2 {
+  width: 70%;
+  height: 100%;
+  background-color: grey;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slide-seniorM1 {
+  width: 70%;
+  height: 100%;
+  background-color: grey;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/** Thumbnail BKGD **/
+
+.thumbnail-bureau {
+  background: url("../../public/img/Equipes/Bureau.webp") center / cover;
+}
+
+.thumbnail-U9F1 {
+  background-color: gray;
+}
+
+.thumbnail-U9M2 {
+  background-color: gray;
+}
+
+.thumbnail-U9M1 {
+  background: url("../../public/img/Equipes/U9M1.webp") center / cover;
+}
+
+.thumbnail-U11F2 {
+  background-color: gray;
+}
+
+.thumbnail-U11F1 {
+  background: url("../../public/img/Equipes/U11F1.webp") center / cover;
+}
+.thumbnail-U11M2 {
+  background: url("../../public/img/Equipes/U11M2.webp") center / cover;
+}
+.thumbnail-U11M1 {
+  background-color: gray;
+}
+.thumbnail-U13F1 {
+  background-color: gray;
+}
+.thumbnail-U13M1 {
+  background: url("../../public/img/Equipes/U13M1.webp") center / cover;
+}
+.thumbnail-U15M2 {
+  background: url("../../public/img/Equipes/U15M2.webp") center / cover;
+}
+.thumbnail-U15M1 {
+  background-color: gray;
+}
+.thumbnail-U18M2 {
+  background-color: gray;
+}
+.thumbnail-U18M1 {
+  background: url("../../public/img/Equipes/U18M1.webp") center / cover;
+}
+.thumbnail-seniorF1 {
+  background-color: gray;
+}
+.thumbnail-seniorM2 {
+  background-color: gray;
+}
+.thumbnail-seniorM1 {
+  background-color: gray;
+}
+
+/** Média Query **/
+
+@media screen and (max-width: 820px) {
+  .keen-slider__slide {
+    display: flex;
+    min-height: auto;
+    height: 350px;
+  }
+
+  .thumbnail {
+    min-height: auto;
+  }
+
+  .thumbnail p {
+    text-align: center;
+    padding: 0;
+    font-size: 1rem;
+  }
 }

@@ -6,17 +6,6 @@ import "keen-slider/keen-slider.min.css";
 
 import "../style/MainEquipes.css";
 
-// Import Img //
-import U9M1 from "../../public/img/Equipes/U9M1.webp";
-import Bureau from "../../public/img/Equipes/Bureau.webp";
-import U11F1 from "../../public/img/Equipes/U11F1.webp";
-import U11M2 from "../../public/img/Equipes/U11M2.webp";
-import U13M1 from "../../public/img/Equipes/U13M1.webp";
-import U15M2 from "../../public/img/Equipes/U15M2.webp";
-import U18M2 from "../../public/img/Equipes/U18M2.webp";
-
-// Import Img //
-
 function MainEquipes() {
   // Start Observer //
 
@@ -139,44 +128,74 @@ function MainEquipes() {
             <div className="keen-slider__slide number-slide12 slide">
               <div className="slide-U15M1 slide-contain"></div>
             </div>
+            <div className="keen-slider__slide number-slide12 slide">
+              <div className="slide-U18M2 slide-contain"></div>
+            </div>
+            <div className="keen-slider__slide number-slide12 slide">
+              <div className="slide-U18M1 slide-contain"></div>
+            </div>
+            <div className="keen-slider__slide number-slide12 slide">
+              <div className="slide-seniorF1 slide-contain"></div>
+            </div>
+            <div className="keen-slider__slide number-slide12 slide">
+              <div className="slide-seniorM2 slide-contain"></div>
+            </div>
+            <div className="keen-slider__slide number-slide12 slide">
+              <div className="slide-seniorM1 slide-contain"></div>
+            </div>
           </div>
 
           <div ref={thumbnailRef} className="keen-slider thumbnail">
-            <div className="keen-slider__slide number-slide1 thumbnail">
+            <div className="keen-slider__slide number-slide1 thumbnail-contain thumbnail-bureau">
               <p>Bureau</p>
             </div>
-            <div className="keen-slider__slide number-slide2 thumbnail">
+            <div className="keen-slider__slide number-slide2 thumbnail-contain thumbnail-U9F1">
               <p>U9 F1</p>
             </div>
-            <div className="keen-slider__slide number-slide3 thumbnail">
+            <div className="keen-slider__slide number-slide3 thumbnail-contain thumbnail-U9M2">
               <p>U9 M2</p>
             </div>
-            <div className="keen-slider__slide number-slide4 thumbnail">
-              <p>U9 F2</p>
+            <div className="keen-slider__slide number-slide4 thumbnail-contain thumbnail-U9M1">
+              <p>U9 M1</p>
             </div>
-            <div className="keen-slider__slide number-slide5 thumbnail">
+            <div className="keen-slider__slide number-slide5 thumbnail-contain thumbnail-U11F2">
+              <p>U11 F2</p>
+            </div>
+            <div className="keen-slider__slide number-slide6 thumbnail-contain thumbnail-U11F1">
               <p>U11 F1</p>
             </div>
-            <div className="keen-slider__slide number-slide6 thumbnail">
+            <div className="keen-slider__slide number-slide7 thumbnail-contain thumbnail-U11M2">
+              <p>U11 M2</p>
+            </div>
+            <div className="keen-slider__slide number-slide8 thumbnail-contain thumbnail-U11M1">
               <p>U11 M1</p>
             </div>
-            <div className="keen-slider__slide number-slide7 thumbnail">
+            <div className="keen-slider__slide number-slide9 thumbnail-contain thumbnail-U13F1">
               <p>U13 F1</p>
             </div>
-            <div className="keen-slider__slide number-slide8 thumbnail">
+            <div className="keen-slider__slide number-slide10 thumbnail-contain thumbnail-U13M1">
               <p>U13 M1</p>
             </div>
-            <div className="keen-slider__slide number-slide9 thumbnail">
+            <div className="keen-slider__slide number-slide11 thumbnail-contain thumbnail-U15M2">
               <p>U15 M2</p>
             </div>
-            <div className="keen-slider__slide number-slide10 thumbnail">
+            <div className="keen-slider__slide number-slide12 thumbnail-contain thumbnail-U15M1">
               <p>U15 M1</p>
             </div>
-            <div className="keen-slider__slide number-slide11 thumbnail">
+            <div className="keen-slider__slide number-slide12 thumbnail-contain thumbnail-U18M2">
               <p>U18 M2</p>
             </div>
-            <div className="keen-slider__slide number-slide12 thumbnail">
+            <div className="keen-slider__slide number-slide12 thumbnail-contain thumbnail-U18M1">
               <p>U18 M1</p>
+            </div>
+            <div className="keen-slider__slide number-slide12 thumbnail-contain thumbnail-seniorF1">
+              <p>Senior F1</p>
+            </div>
+            <div className="keen-slider__slide number-slide12 thumbnail-contain thumbnail-seniorM2">
+              <p>Senior M2</p>
+            </div>
+            <div className="keen-slider__slide number-slide12 thumbnail-contain thumbnail-seniorM1">
+              <p>Seniro M1</p>
             </div>
           </div>
         </div>

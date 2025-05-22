@@ -1,19 +1,21 @@
 .main-boutique-container {
+  position: relative;
   height: auto;
-  padding: 30px 0;
+  padding: 30px 0 50px 0;
   background: linear-gradient(
-    180deg,
-    #e0dfdf 0%,
-    #e0dfdf 24%,
-    rgba(100, 132, 237, 1) 100%
+    358deg,
+    rgba(7, 132, 173, 0.82) 57%,
+    rgba(0, 0, 0, 0.82) 89%
   );
 }
 
 .main-boutique-container h2 {
   text-align: center;
-  color: rgb(34, 98, 161);
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 2px;
   margin: 0;
-  padding: 20px 0;
+  padding: 40px 0;
   text-transform: uppercase;
 }
 
@@ -41,11 +43,96 @@
 
 .main-boutique-title p {
   text-align: center;
-  color: black;
+  color: white;
   line-height: 30px;
   letter-spacing: 2px;
+  font-size: 1.2rem;
   padding: 0 20px;
 }
+
+.main-boutique-para {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+}
+
+/** Button **/
+
+.main-boutique-para button {
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: white;
+  color: ghostwhite;
+}
+.main-boutique-para button a {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  transition: all 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.main-boutique-para button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.main-boutique-para a:hover {
+  filter: drop-shadow(2px 5px 4px black);
+  transition: all 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.main-boutique-para a:active {
+  transition: all 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  scale: 0.9;
+}
+
+.main-boutique-para button:hover span {
+  color: black;
+}
+
+.main-boutique-para button::before,
+.main-boutique-para button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.main-boutique-para button::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.main-boutique-para button:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+/** End Button **/
 
 .main-boutique-shop {
   width: 600px;
@@ -57,8 +144,7 @@
 .main-boutique-shop img {
   width: 100%;
   height: 420px;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
+  border-radius: 15px;
   display: flex;
 }
 
@@ -70,13 +156,17 @@
   }
   .main-boutique-contain {
     flex-direction: column;
-    height: auto;
+    height: 100%;
     padding: 12px;
   }
   .main-boutique-title {
     width: 100%;
-    height: 250px;
+    height: 360px;
     border: none;
+  }
+
+  .main-boutique-para button {
+    margin: 15px auto;
   }
 
   .main-boutique-shop {
