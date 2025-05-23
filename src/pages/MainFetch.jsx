@@ -63,14 +63,10 @@ function MainFetch() {
             ref={btn1Intersection}
             onClick={handleChangeResultat}
           >
-            Résultats
+            <span>Résultats</span>
           </button>
-          <button
-            id="classement"
-            ref={btn2Intersection}
-            onClick={handleChangeClassement}
-          >
-            Classement
+          <button id="classement" ref={btn2Intersection} onClick={handleChangeClassement}>
+            <span> Classement </span>
           </button>
         </div>
         <div className="main-actu-fetch">

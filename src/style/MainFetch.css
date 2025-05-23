@@ -29,19 +29,80 @@
   align-items: center;
 }
 
+/** Button **/
+
 .main-actu-btn button {
-  width: 120px;
-  height: 35px;
-  border-radius: 0.6rem;
-  border: 1px grey solid;
-  filter: drop-shadow(2px 3px 2px black);
+  position: relative;
+  outline: none;
   cursor: pointer;
-  transition: all 0.1s;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: white;
+  color: ghostwhite;
+}
+.main-actu-btn button a {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  transition: all 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.main-actu-btn button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.main-actu-btn a:hover {
+  filter: drop-shadow(2px 5px 4px black);
+  transition: all 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
 
 .main-actu-btn button:active {
-  transform: scale(0.9);
+  transition: all 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  scale: 0.9;
 }
+
+.main-actu-btn button:hover span {
+  color: black;
+}
+
+.main-actu-btn button::before,
+.main-actu-btn button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.main-actu-btn button::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.main-actu-btn button:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+/** End Button **/
 
 #resultat {
   opacity: 0;
@@ -88,9 +149,13 @@
 }
 
 button.active {
-  border: 1px rgb(34, 98, 161) solid;
-  filter: drop-shadow(2px 4px 2px rgb(34, 98, 161));
   transition: all 0.5s ease;
+}
+
+button.active:not(button:active) {
+  scale: 0.8;
+  transition: all 0.5s ease;
+  border: 1px solid white;
 }
 
 /** MediaQuery Mobile **/
@@ -111,7 +176,6 @@ button.active {
     height: 100%;
     max-height: 1200px !important;
     padding: 5px 0 !important;
-    /* overflow-y: hidden !important; */
   }
 
   .main-actu-match {
@@ -131,7 +195,7 @@ button.active {
   .fetch-classement {
     height: 600px !important;
     overflow-x: hidden !important;
-    /* overflow-y: hidden !important; */
+
     padding: 5px;
   }
 }
