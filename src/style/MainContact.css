@@ -1,12 +1,8 @@
 .main-contact-container {
   position: relative;
   width: 100%;
-  height: 50vh;
-  background: linear-gradient(
-    180deg,
-    rgba(7, 132, 173, 0.82) 57%,
-    rgba(0, 0, 0, 0.82) 89%
-  );
+  height: 100%;
+  background: linear-gradient(180deg, rgba(7, 132, 173, 0.82) 57%, rgba(0, 0, 0, 0.82) 89%);
 }
 
 .main-contact-container::before {
@@ -87,6 +83,10 @@
 
 .main-contact-mail img {
   margin: 15px auto;
+}
+
+.main-contact-bottom h4 {
+  color: white;
 }
 
 /** MediaQuery Mobile **/
