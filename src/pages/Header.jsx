@@ -78,7 +78,8 @@ function Header() {
           </span>
         </div>
         <Navigation />
-        <h1>
+        <h1 style={{ display: "none" }}>La Vaillante Immaculée Basket Club</h1>
+        <div className="header-title" preload>
           <svg className="desktop" viewBox="0 0 2800 300">
             <text x="50%" y="80%" dy=".35em" textAnchor="middle">
               La Vaillante Basket Club
@@ -94,7 +95,7 @@ function Header() {
               </text>
             </svg>
           </div>
-        </h1>
+        </div>
       </div>
     </>
   );

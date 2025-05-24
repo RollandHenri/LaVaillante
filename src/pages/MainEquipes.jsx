@@ -1,10 +1,20 @@
 // Import //
 import { useKeenSlider } from "keen-slider/react";
 // import { useRef, useEffect } from "react";
-
 import "keen-slider/keen-slider.min.css";
-
 import "../style/MainEquipes.css";
+
+// Import IMG //
+
+import Bureau from "../../public/img/Equipes/Bureau.webp";
+import U9M1 from "../../public/img/Equipes/U9M1.webp";
+import U11F1 from "../../public/img/Equipes/U11F1.webp";
+import U11M2 from "../../public/img/Equipes/U11M2.webp";
+import U13M1 from "../../public/img/Equipes/U13M1.webp";
+import U15M2 from "../../public/img/Equipes/U15M2.webp";
+import U18M1 from "../../public/img/Equipes/U18M1.webp";
+
+// End import IMG //
 
 function MainEquipes() {
   // Start Observer //
@@ -93,55 +103,69 @@ function MainEquipes() {
         <div className="main-equipe-carousel-container">
           <div ref={sliderRef} className="keen-slider">
             <div className="keen-slider__slide number-slide1 slide">
-              <div className="slide-bureau"></div>
+              <div className="slide-contain-equipe">
+                <img src={Bureau} alt="Photo du bureau de la Vaillante" />
+              </div>
             </div>
             <div className="keen-slider__slide number-slide2 slide">
-              <div className="slide-U9F1 slide-contain"></div>
+              <div className="slide-contain-equipe"></div>
             </div>
             <div className="keen-slider__slide number-slide3 slide">
-              <div className="slide-U9M2 slide-contain"></div>
+              <div className="slide-contain-equipe"></div>
             </div>
             <div className="keen-slider__slide number-slide4 slide">
-              <div className="slide-U9M1 slide-contain"></div>
+              <div className="slide-contain-equipe">
+                <img src={U9M1} alt="Photo équipe U9M1" />
+              </div>
             </div>
             <div className="keen-slider__slide number-slide5 slide">
-              <div className="slide-U11F2 slide-contain"></div>
+              <div className="slide-contain-equipe"></div>
             </div>
             <div className="keen-slider__slide number-slide6 slide">
-              <div className="slide-U11F1 slide-contain"></div>
+              <div className="slide-contain-equipe">
+                <img src={U11F1} alt="Photo équipe U11F1" />
+              </div>
             </div>
             <div className="keen-slider__slide number-slide7 slide">
-              <div className="slide-U11M2 slide-contain"></div>
+              <div className="slide-contain-equipe">
+                <img src={U11M2} alt="Photo équipe U11M2" />
+              </div>
             </div>
             <div className="keen-slider__slide number-slide8 slide">
-              <div className="slide-U11M1 slide-contain"></div>
+              <div className="slide-contain-equipe"></div>
             </div>
             <div className="keen-slider__slide number-slide9 slide">
-              <div className="slide-U13F1 slide-contain"></div>
+              <div className="slide-contain-equipe"></div>
             </div>
             <div className="keen-slider__slide number-slide10 slide">
-              <div className="slide-U13M1 slide-contain"></div>
+              <div className="slide-contain-equipe">
+                <img src={U13M1} alt="Photo équipe U13M1" />
+              </div>
             </div>
             <div className="keen-slider__slide number-slide11 slide">
-              <div className="slide-U15M2 slide-contain"></div>
+              <div className="slide-contain-equipe">
+                <img src={U15M2} alt="Photo équipe U15M2" />
+              </div>
             </div>
             <div className="keen-slider__slide number-slide12 slide">
-              <div className="slide-U15M1 slide-contain"></div>
+              <div className="slide-contain-equipe"></div>
             </div>
             <div className="keen-slider__slide number-slide12 slide">
-              <div className="slide-U18M2 slide-contain"></div>
+              <div className="slide-contain-equipe"></div>
             </div>
             <div className="keen-slider__slide number-slide12 slide">
-              <div className="slide-U18M1 slide-contain"></div>
+              <div className="slide-contain-equipe">
+                <img src={U18M1} alt="Photo équipe U18M1" />
+              </div>
             </div>
             <div className="keen-slider__slide number-slide12 slide">
-              <div className="slide-seniorF1 slide-contain"></div>
+              <div className="slide-contain-equipe"></div>
             </div>
             <div className="keen-slider__slide number-slide12 slide">
-              <div className="slide-seniorM2 slide-contain"></div>
+              <div className="slide-contain-equipe"></div>
             </div>
             <div className="keen-slider__slide number-slide12 slide">
-              <div className="slide-seniorM1 slide-contain"></div>
+              <div className="slide-contain-equipe"></div>
             </div>
           </div>
 

@@ -1,6 +1,7 @@
 import "../style/navbar.css";
 import Logo from "../../public/logo/onglet_pic.webp";
 import Face from "../../public/logo/facebook_white.webp";
+import Insta from "../../public/logo/instagram_white.webp";
 import { NavLink } from "react-router-dom";
 
 function Navigation() {
@@ -49,6 +50,14 @@ function Navigation() {
               target="_blank"
             >
               <img src={Face} alt="logo facebook" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/lavaillantebasket/"
+              target="_blank"
+            >
+              <img src={Insta} alt="logo instagram" />
             </a>
           </li>
         </ul>

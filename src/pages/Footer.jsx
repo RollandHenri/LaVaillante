@@ -2,6 +2,7 @@
 
 import "../style/Footer.css";
 import Facebook from "../../public/logo/facebook_white.webp";
+import Insta from "../../public/logo/instagram_white.webp";
 import Logo from "../../public/logo/onglet_pic.webp";
 
 // Import Logo //
@@ -55,14 +56,22 @@ export default function Footer() {
 
         <ul className="footer-logo">
           <li>
-            <img width={"40px"} src={Logo} alt="Logo de la Vaillante" />
+            <img width={"30px"} src={Logo} alt="Logo de la Vaillante" />
           </li>
           <li>
             <a
               href="https://www.facebook.com/vaillanteimmaculeebasket"
               target="_blank"
             >
-              <img width={"40px"} src={Facebook} alt="logo facebook" />
+              <img width={"30px"} src={Facebook} alt="logo facebook" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/lavaillantebasket/"
+              target="_blank"
+            >
+              <img src={Insta} width={"30px"} alt="logo instagram" />
             </a>
           </li>
         </ul>
